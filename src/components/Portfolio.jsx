@@ -2,6 +2,7 @@ import React from "react";
 import furnitureApp from "../assets/portfolio/e-commerce-furniture-app.png";
 import githubUsersApp from "../assets/portfolio/github-users-app.png";
 import myCocktail from "../assets/portfolio/myCocktail.png";
+import hooBank from "../assets/portfolio/hoobank-business-app.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -26,7 +27,13 @@ const Portfolio = () => {
       demo: "https://my-cocktail-omar-adam-react.netlify.app/",
       code: "https://github.com/OmarAdamMostafa/MyCocktail",
     },
-
+    {
+      id: 4,
+      src: hooBank,
+      name: "HooBank",
+      demo: "https://hoobank-business-app-omar-adam.netlify.app/",
+      code: "https://github.com/OmarAdamMostafa/HooBankBusinessApp",
+    },
   ];
 
   return (
@@ -48,11 +55,11 @@ const Portfolio = () => {
               <div className="flex items-center justify-center py-5 text-xl font-bold">
                 {portfolio.name}
               </div>
-              <div  className="shadow-md shadow-gray-600 rounded-lg">
+              <div  className="shadow-md shadow-gray-600 rounded-lg ">
                 <img
                   src={portfolio.src}
                   alt="portfolio"
-                  className="rounded-md duration-200 hover:scale-105 hover:opacity-70"
+                  className="rounded-md duration-200 hover:scale-105"
                 />
                 <div className="flex items-center justify-center">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
