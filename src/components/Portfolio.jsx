@@ -27,7 +27,7 @@ const Portfolio = () => {
                   <img
                     src={portfolio.src}
                     alt="portfolio"
-                    className="rounded-md object-cover z-20 duration-300 hover:opacity-30"
+                    className="rounded-md object-cover z-20 duration-300 hover:opacity-10"
                   />
                   <div className="flex text-center absolute z-10 text-white text-sm font-semibold">
                     {portfolio.description}
