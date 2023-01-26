@@ -1,41 +1,8 @@
 import React from "react";
-import furnitureApp from "../assets/portfolio/e-commerce-furniture-app.png";
-import githubUsersApp from "../assets/portfolio/github-users-app.png";
-import myCocktail from "../assets/portfolio/myCocktail.png";
-import hooBank from "../assets/portfolio/hoobank-business-app.png";
+import { portfolios } from "../utils/constants"
 
 const Portfolio = () => {
-  const portfolios = [
-    {
-      id: 1,
-      src: furnitureApp,
-      name: "ComfySloth",
-      demo: "https://e-commerce-furniture-app-omar-adam.netlify.app/",
-      code: "https://github.com/OmarAdamMostafa/E-CommerceFurnitureApp",
-    },
-    {
-      id: 2,
-      src: githubUsersApp,
-      name: "GitHubUsers",
-      demo: "https://github-users-app-omar-adam.netlify.app/",
-      code: "https://github.com/OmarAdamMostafa/GitHubUsersApp",
-    },
-    {
-      id: 3,
-      src: myCocktail,
-      name: "MyCocktail",
-      demo: "https://my-cocktail-omar-adam-react.netlify.app/",
-      code: "https://github.com/OmarAdamMostafa/MyCocktail",
-    },
-    {
-      id: 4,
-      src: hooBank,
-      name: "HooBank",
-      demo: "https://hoobank-business-app-omar-adam.netlify.app/",
-      code: "https://github.com/OmarAdamMostafa/HooBankBusinessApp",
-    },
-  ];
-
+  
   return (
     <div
       name="portfolio"
@@ -59,7 +26,7 @@ const Portfolio = () => {
                 <img
                   src={portfolio.src}
                   alt="portfolio"
-                  className="rounded-md duration-200 hover:scale-105"
+                  className="rounded-md object-cover duration-200 hover:scale-105"
                 />
                 <div className="flex items-center justify-center">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">

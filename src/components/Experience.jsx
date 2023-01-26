@@ -1,6 +1,6 @@
 import React from "react";
 
-import { techs } from "../utils/Experiences"
+import { techs } from "../utils/constants"
 
 const Experience = () => {
   return (
