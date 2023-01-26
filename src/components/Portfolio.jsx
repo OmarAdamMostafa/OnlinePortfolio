@@ -23,11 +23,16 @@ const Portfolio = () => {
                 {portfolio.name}
               </div>
               <div  className="shadow-md shadow-gray-600 rounded-lg ">
-                <img
-                  src={portfolio.src}
-                  alt="portfolio"
-                  className="rounded-md object-cover duration-200 hover:scale-105"
-                />
+                <div className="flex justify-center items-center relative">
+                  <img
+                    src={portfolio.src}
+                    alt="portfolio"
+                    className="rounded-md object-cover z-20 duration-300 hover:opacity-30"
+                  />
+                  <div className="flex text-center absolute z-10 text-white text-sm font-semibold">
+                    {portfolio.description}
+                  </div>
+                </div>
                 <div className="flex items-center justify-center">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                     <a
